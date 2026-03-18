@@ -24,7 +24,7 @@ const StudentDashboard = () => {
         return;
       }
 
-      const res = await fetch("http://localhost:8000/api/students/profile", {
+      const res = await fetch("https://student-management-system-8hjo.onrender.com", {
         headers: {
           Authorization: `Bearer ${token}`
         }
