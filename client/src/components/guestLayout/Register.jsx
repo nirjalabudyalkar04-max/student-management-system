@@ -33,7 +33,7 @@ const Register = () => {
     setIsLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/users/register",
+        "https://student-management-system-8hjo.onrender.com",
         formData
       );
 
