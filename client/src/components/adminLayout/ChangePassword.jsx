@@ -17,7 +17,7 @@ const ChangePassword = () => {
 
     try {
       const res = await axios.post(
-        "https://student-management-system-8hjo.onrender.com",
+        "https://student-management-system-hla4.onrender.com",
         data
       );
 
