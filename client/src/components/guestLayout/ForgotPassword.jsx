@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { Container, Row, Col, Form, Button, Alert, Spinner, Card } from "react-bootstrap";
 
-const API_BASE = "https://student-management-system-8hjo.onrender.com";
+const API_BASE = "https://student-management-system-hla4.onrender.com";
 
 export default class ForgotPassword extends React.Component {
   state = {
