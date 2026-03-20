@@ -14,7 +14,7 @@ const AdminDashboard = () => {
 
   const fetchDashboard = async () => {
     try {
-      const res = await fetch("https://student-management-system-8hjo.onrender.com");
+      const res = await fetch("https://student-management-system-hla4.onrender.com");
       const users = await res.json();
 
       const students = users.filter((u) => u.role === "student");
@@ -42,7 +42,7 @@ const AdminDashboard = () => {
 
   const handleApprove = async (id) => {
     try {
-      const res = await fetch(`https://student-management-system-8hjo.onrender.com/${id}`, {
+      const res = await fetch(`https://student-management-system-hla4.onrender.com/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
       });
@@ -65,7 +65,7 @@ const AdminDashboard = () => {
 
   const handleReject = async (id) => {
     try {
-      const res = await fetch(`https://student-management-system-8hjo.onrender.com/${id}`, {
+      const res = await fetch(`https://student-management-system-hla4.onrender.com/${id}`, {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
       });
