@@ -7,7 +7,7 @@ const StudentNoticeBoard = () => {
   useEffect(() => {
     const fetchNotices = async () => {
       try {
-        const response = await fetch("https://student-management-system-8hjo.onrender.com");
+        const response = await fetch("https://student-management-system-hla4.onrender.com");
         const data = await response.json();
 
         if (Array.isArray(data)) {
