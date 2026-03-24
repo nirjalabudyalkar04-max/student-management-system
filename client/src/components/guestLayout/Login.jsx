@@ -15,7 +15,7 @@ const Login = () => {
 
     try {
       const res = await axios.post(
-        "https://student-management-system-hla4.onrender.com",
+        "https://student-management-system-zrsh.onrender.com/api/users/login",
         { email, password }
       );
 
