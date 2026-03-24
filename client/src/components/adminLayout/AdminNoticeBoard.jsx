@@ -7,7 +7,7 @@ const AdminNoticeBoard = () => {
   const [notices, setNotices] = useState([]);
 
   const fetchNotices = async () => {
-    const res = await axios.get("https://student-management-system-hla4.onrender.com");
+    const res = await axios.get("https://student-management-system-zrsh.onrender.com/api/notices");
     setNotices(res.data);
   };
 
@@ -18,7 +18,7 @@ const AdminNoticeBoard = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await axios.post("https://student-management-system-hla4.onrender.com", {
+    await axios.post("https://student-management-system-zrsh.onrender.com/api/notices/add", {
       title,
       message,
     });
@@ -29,7 +29,7 @@ const AdminNoticeBoard = () => {
   };
 
   const handleDelete = async (id) => {
-    await axios.delete(`https://student-management-system-hla4.onrender.com/${id}`);
+    await axios.delete(`https://student-management-system-zrsh.onrender.com/api/notices/${id}`);
     fetchNotices();
   };
 
