@@ -13,7 +13,7 @@ const StudentDetails = () => {
 
   const fetchApprovedStudents = async () => {
     try {
-      const res = await fetch("https://student-management-system-hla4.onrender.com");
+      const res = await fetch("https://student-management-system-zrsh.onrender.com/api/users/approved/all");
       const data = await res.json();
 
       if (res.status !== 200) {
@@ -60,7 +60,7 @@ const StudentDetails = () => {
 
   const handleSave = async (stu) => {
     try {
-      const res = await fetch(`https://student-management-system-hla4.onrender.com/${stu._id}`, {
+      const res = await fetch(`https://student-management-system-zrsh.onrender.com/api/users/update/${stu._id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
