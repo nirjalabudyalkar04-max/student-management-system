@@ -24,7 +24,7 @@ const StudentDashboard = () => {
         return;
       }
 
-      const res = await fetch("https://student-management-system-hla4.onrender.com", {
+      const res = await fetch("https://student-management-system-zrsh.onrender.com/api/students/profile", {
         headers: {
           Authorization: `Bearer ${token}`
         }
